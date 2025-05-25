@@ -69,7 +69,7 @@ export default function ContactSection() {
                   </div>
                   <div className="ml-4">
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600 mt-1">betelcareapp@gmail.com</p>
+                    <p className="text-gray-600 mt-1">SMARTMUSAapp@gmail.com</p>
                   </div>
                 </div>
                 
@@ -81,7 +81,7 @@ export default function ContactSection() {
                   </div>
                   <div className="ml-4">
                     <p className="font-medium text-gray-900">Phone</p>
-                    <p className="text-gray-600 mt-1">+94 77 334 6523</p>
+                    <p className="text-gray-600 mt-1">+94 77 258 6523</p>
                   </div>
                 </div>
               </div>

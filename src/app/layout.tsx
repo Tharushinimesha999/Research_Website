@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SMARTMUSA Research",
+  title: " Research",
   description: "AI-Powered App for Sri Lankan Banana Farmers",
   icons: [
     { rel: "icon", url: "/leaf.png" },

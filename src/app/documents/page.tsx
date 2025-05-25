@@ -78,7 +78,7 @@ const documentCategories = [
   },
   {
     title: "Research Paper",
-    description: "Our published academic paper presenting the key findings and innovations of our BetelCare project.",
+    description: "Our published academic paper presenting the key findings and innovations of our SMARTMUSA project.",
     icon: <FileText className="w-6 h-6" />,
     color: "#9C27B0",
     bgColor: "rgba(156, 39, 176, 0.1)",
@@ -92,7 +92,7 @@ const documentCategories = [
   },
   {
     title: "Team Information",
-    description: "Details about our research team members, roles, and contributions to the BetelCare project.",
+    description: "Details about our research team members, roles, and contributions to the SMARTMUSA project.",
     icon: <Users className="w-6 h-6" />,
     color: "#00BCD4",
     bgColor: "rgba(0, 188, 212, 0.1)",
@@ -164,7 +164,7 @@ export default function DocumentsPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl text-gray-600 mb-8"
             >
-              Access all documentation related to our BetelCare research project, from initial proposals to final reports.
+              Access all documentation related to our SMARTMUSA research project, from initial proposals to final reports.
             </motion.p>
           </div>
         </div>
@@ -267,7 +267,7 @@ export default function DocumentsPage() {
           
           <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
             <p className="font-mono text-sm text-gray-700 p-6 bg-white border border-gray-200 rounded-lg mb-6 leading-relaxed">
-              Ranawaka, W.E.I., Dewasinghe, U.H., Fernando, B.K.M., Siriwardhana, E.A.L.S., Kasthuriarachchi, S., & Weerasinghe, L. (2025). BetelCare: Development of an AI-Powered Application for Sri Lankan Betel Farmers. <em>Journal of Agricultural Technology</em>. Department of Information Technology, Sri Lanka Institute of Information Technology, Malabe, Sri Lanka.
+              Arachchi, M.J.E.M., Kumari, T.A.T.N., Herarth, A.M.A.D., De Silva, M.H.S.A., Kelegama, T., & Rupasinghe, S. (2025). SMARTMUSA: Development of an AI-Powered Mobile Application for Banana Farmers in Sri Lanka.  Department of Information Technology, Sri Lanka Institute of Information Technology, Malabe, Sri Lanka.
             </p>
             
             <div className="flex justify-end">

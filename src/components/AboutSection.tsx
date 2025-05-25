@@ -25,7 +25,7 @@ export default function AboutSection() {
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/banner3.png"
-                alt="Betel leaf farming in Sri Lanka"
+                alt="Banana farming in Sri Lanka"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 quality={85}
@@ -68,17 +68,17 @@ export default function AboutSection() {
               About the Project
             </h2>
             <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Empowering Sri Lankan Betel Farmers
+              Empowering Sri Lankan Banana Farmers
             </h3>
             <p className="mt-4 text-lg text-gray-600">
-              BetelCare is an innovative Flutter application designed specifically for betel farmers in Sri Lanka. 
+              SMARMUSA is an innovative Flutter application designed specifically for banana farmers in Sri Lanka. 
               We&apos;re bridging the gap between traditional farming techniques and modern data-driven agriculture.
             </p>
             
             <div className="mt-8 space-y-4">
               {[
                 "Developed for the Puttalam, Anamaduwa, and Kurunegala regions",
-                "Fully available in Sinhala language for easy understanding",
+                "Fully available in Sinhala and english language for easy understanding",
                 "Combines AI technology with traditional farming knowledge",
                 "Increases productivity and reduces resource wastage"
               ].map((feature, index) => (

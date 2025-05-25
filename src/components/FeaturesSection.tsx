@@ -8,19 +8,19 @@ import { Leaf, BarChart, Cloud, ShoppingCart, Users, Smartphone } from "lucide-r
 const features = [
   {
     name: "Disease Detection",
-    description: "Utilizes Convolutional Neural Networks to identify diseases and pests affecting betel leaves with high accuracy.",
+    description: "Utilizes Convolutional Neural Networks to identify diseases and pests affecting banana leaves with high accuracy.",
     icon: <Leaf className="h-6 w-6 text-white" />,
     color: "var(--color-primary)"
   },
   {
     name: "Harvest Prediction",
-    description: "Predicts optimal harvest times and yield quantities for three betel leaf types using advanced machine learning algorithms.",
+    description: "Predicts optimal harvest times and yield quantities for banana types using advanced machine learning algorithms.",
     icon: <BarChart className="h-6 w-6 text-white" />,
     color: "var(--color-primary-dark)"
   },
   {
     name: "Market Prediction",
-    description: "Analyzes market trends to help farmers decide the best time to sell their harvested betel leaves for maximum profit.",
+    description: "Analyzes market trends to help farmers decide the best time to sell their harvested banana for maximum profit.",
     icon: <ShoppingCart className="h-6 w-6 text-white" />,
     color: "var(--color-accent)"
   },
@@ -32,7 +32,7 @@ const features = [
   },
   {
     name: "Sinhala Language",
-    description: "Built entirely in Sinhala language to ensure easy understanding and accessibility for local betel farmers.",
+    description: "Built entirely in Sinhala and english language to ensure easy understanding and accessibility for local banana farmers.",
     icon: <Users className="h-6 w-6 text-white" />,
     color: "var(--color-primary)"
   },
@@ -64,7 +64,7 @@ export default function FeaturesSection() {
             Four Integrated AI-Powered Systems
           </h3>
           <p className="mt-4 text-lg text-gray-600">
-            Our comprehensive solution addresses the most critical challenges faced by betel farmers through 
+            Our comprehensive solution addresses the most critical challenges faced by banana farmers through 
             innovative technology and data-driven approaches.
           </p>
         </motion.div>
