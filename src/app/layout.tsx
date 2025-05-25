@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BetelCare Research",
-  description: "AI-Powered App for Sri Lankan Betel Farmers",
+  title: "SMARTMUSA Research",
+  description: "AI-Powered App for Sri Lankan Banana Farmers",
   icons: [
     { rel: "icon", url: "/leaf.png" },
     { rel: "shortcut icon", url: "/leaf.png" },
