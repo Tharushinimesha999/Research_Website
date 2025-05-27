@@ -25,7 +25,7 @@ export default function AboutSection() {
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/banner3.png"
-                alt="Banana farming in Sri Lanka"
+                alt="Betel leaf farming in Sri Lanka"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 quality={85}
@@ -39,7 +39,7 @@ export default function AboutSection() {
               {/* Stats overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-8 grid grid-cols-3 gap-4">
                 {[
-                  { value: "94.95%", label: "P-Type Accuracy" },
+                  { value: "97.09%", label: "Ripeness Prediction" },
                   { value: "88.89%", label: "KT-Type Accuracy" },
                   { value: "87.4%", label: "Market Prediction" }
                 ].map((stat, index) => (
@@ -71,15 +71,14 @@ export default function AboutSection() {
               Empowering Sri Lankan Banana Farmers
             </h3>
             <p className="mt-4 text-lg text-gray-600">
-              SMARMUSA is an innovative Flutter application designed specifically for banana farmers in Sri Lanka. 
-              We&apos;re bridging the gap between traditional farming techniques and modern data-driven agriculture.
+              SmartMusa is a transformative mobile application built using React Native, specifically designed for banana farmers in Sri Lanka. It bridges the gap between age-old agricultural practices and cutting-edge smart farming technologies.
             </p>
             
             <div className="mt-8 space-y-4">
               {[
-                "Developed for the Puttalam, Anamaduwa, and Kurunegala regions",
-                "Fully available in Sinhala and english language for easy understanding",
-                "Combines AI technology with traditional farming knowledge",
+                "Developed for regions like Anuradhapura, Dambulla, and Embilipitiya",
+                "Fully available in Sinhala language for easy understanding",
+                "Combines AI (CNN, VGG16) and IoT with local farming expertise",
                 "Increases productivity and reduces resource wastage"
               ].map((feature, index) => (
                 <div key={index} className="flex items-start">

@@ -4,7 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowLeft, BarChart, Check, ExternalLink, Calendar, Tractor, Map, LineChart } from "lucide-react";
+import { ArrowLeft, BarChart, Check, ExternalLink, Calendar, Map, LineChart } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -103,7 +103,7 @@ export default function HarvestPredictionPage() {
                     <div>
                       <h3 className="text-xl font-medium mb-2">CNN-Based Ripeness Classification</h3>
                       <p className="text-gray-600">
-                        A convolutional neural network (VGG16) is trained on banana leaf images collected at different ripeness stages. The system analyzes visual cues such as color and texture to accurately classify bananas into Raw, Semi-Ripe, and Fully Ripe categories, helping farmers make data-driven harvest decisions.
+                        A convolutional neural network (VGG16) is trained on banana leaf images collected at different ripeness stages. The system analyzes visual cues such as color and texture to accurately classify bananas into Unrip, Ripe, overripe and rotten categories, helping farmers make data-driven harvest decisions.
 
 
                       </p>
@@ -120,9 +120,9 @@ export default function HarvestPredictionPage() {
                       <BarChart className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium mb-2">Ensemble Yield Prediction</h3>
+                      <h3 className="text-xl font-medium mb-2">Smart Harvest Advisory</h3>
                       <p className="text-gray-600">
-                        Combination of XGBoost, Random Forest, and Gradient Boosting models analyzing harvest dates, weather conditions, land size, planting density, soil type, and location data for accurate yield estimation.
+                        Combines image preprocessing, lighting normalization, and ripeness classification to recommend ideal harvesting time, minimizing post-harvest loss and enhancing quality for Sri Lankan banana varieties.
                       </p>
                     </div>
                   </motion.div>
@@ -137,38 +137,23 @@ export default function HarvestPredictionPage() {
                       <Calendar className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium mb-2">Optimal Harvest Timing</h3>
+                      <h3 className="text-xl font-medium mb-2">Farmer Support & Field Feedback</h3>
                       <p className="text-gray-600">
-                        Advanced data preprocessing calculates average rainfall, temperature ranges, and planting density to determine the optimal harvest dates for maximum yield and quality across all three betel types.
+                        Mobile app with Sinhala/English support provides real-time ripeness results and confidence scores. Farmers can compare predictions with actual outcomes to refine decisions. Model learns continuously using feedback and test data stored in Supabase.
                       </p>
                     </div>
                   </motion.div>
                   
-                  <motion.div
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.6 }}
-                    className="flex items-start"
-                  >
-                    <div className="flex-shrink-0 p-2 rounded-lg mr-4" style={{ backgroundColor: 'var(--color-primary)', color: 'white' }}>
-                      <Tractor className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-medium mb-2">Resource Planning & Comparison</h3>
-                      <p className="text-gray-600">
-                        Enables farmers to plan harvests effectively and compare predicted yields with actual results, stored in Supabase for continuous model improvement and learning.
-                      </p>
-                    </div>
-                  </motion.div>
+                  
                 </div>
                 
                 <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                  <h3 className="text-lg font-medium mb-4">Model Performance (R² Values)</h3>
+                  <h3 className="text-lg font-medium mb-4">Model Performance</h3>
                   <div className="space-y-3">
                     {[
-                      { leafType: "Ensemble Approach", accuracy: "> 0.85" },
-                      { leafType: "Mean Absolute Error", accuracy: "Minimized" },
-                      { leafType: "Complex Interplay Factors", accuracy: "Successfully Captured" }
+                      { leafType: "Model accuracy", accuracy: "97.07%" },
+                      { leafType: "R² Value", accuracy: "> 0.85" },
+                      { leafType: "Mean Absolute Error (MAE)", accuracy: "Minimized" }
                     ].map((stat, index) => (
                       <div key={index} className="flex justify-between items-center">
                         <span className="text-gray-600">{stat.leafType}</span>
@@ -187,22 +172,22 @@ export default function HarvestPredictionPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="grid grid-cols-1 md:grid-cols-2 gap-8"
+              className="grid grid-cols-1 grid-cols-1 gap-8"
             >
               <div className="bg-white rounded-xl shadow-md p-8 border border-gray-100">
                 <h3 className="text-2xl font-bold mb-4">Machine Learning Methodology</h3>
                 <p className="text-gray-600 mb-6">
-                  The harvest prediction system leverages an ensemble approach combining multiple machine learning algorithms to achieve R² values exceeding 0.85, demonstrating strong correlation between predicted and actual yields.
+                  The ripeness detection system uses a deep learning pipeline tailored for real-world banana farming. It leverages transfer learning and CNN-based models to deliver highly accurate predictions with classification accuracy exceeding 97%, even under varied lighting and device conditions.
                 </p>
                 
                 <h4 className="font-medium mb-3" style={{ color: 'var(--color-primary-dark)' }}>Models in Ensemble</h4>
                 <ul className="space-y-2 mb-6">
                   {[
-                    "XGBoost for gradient boosting optimization",
-                    "Random Forest for robust decision trees",
-                    "Gradient Boosting for sequential learning",
-                    "Advanced data preprocessing pipelines",
-                    "Weather sequence analysis integration"
+                    "VGG16 pretrained on ImageNet for transfer learning",
+                    "Custom CNN architecture fine-tuned for banana stages: unripe, ripe, overripe, and rotten",
+                    "Image preprocessing: resizing, normalization, RGB transformation",
+                    "Modular training pipeline for model comparison and selection",
+                    "Deployed for real-time use on low-end mobile devices"
                   ].map((tech, index) => (
                     <li key={index} className="flex items-start">
                       <Check className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: 'var(--color-primary)' }} />
@@ -212,26 +197,7 @@ export default function HarvestPredictionPage() {
                 </ul>
               </div>
               
-              <div className="bg-white rounded-xl shadow-md p-8 border border-gray-100">
-                <h3 className="text-2xl font-bold mb-4">Input Data Sources</h3>
-                <p className="text-gray-600 mb-6">
-                  The system processes comprehensive data inputs to capture the complex interplay between environmental factors, soil properties, planting densities, and historical harvest patterns.
-                </p>
-                
-                <div className="space-y-4">
-                  {[
-                    { dataType: "Weather Analysis", source: "Rainfall patterns, min/max temperatures, weather sequences" },
-                    { dataType: "Field Measurements", source: "GPS/Map-based area calculation, planting density" },
-                    { dataType: "Temporal Data", source: "Last harvest dates, expected harvest timing" },
-                    { dataType: "Agricultural Context", source: "Soil type classification, location-specific factors" }
-                  ].map((data, index) => (
-                    <div key={index} className="bg-gray-50 rounded-lg p-4">
-                      <p className="font-medium" style={{ color: 'var(--color-primary-dark)' }}>{data.dataType}</p>
-                      <p className="text-gray-600 text-sm">{data.source}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              
             </motion.div>
           </div>
           
@@ -243,19 +209,19 @@ export default function HarvestPredictionPage() {
             className="mt-12 bg-white rounded-xl shadow-lg p-8 border border-gray-100"
           >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-              <h3 className="text-2xl font-bold">Research Validation</h3>
+              <h3 className="text-2xl font-bold"> Banana Ripeness Classification</h3>
               <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium" style={{ backgroundColor: 'rgba(46, 125, 50, 0.1)', color: 'var(--color-primary-dark)' }}>
                 <LineChart className="w-4 h-4 mr-2" />
-                Peer-Reviewed Results
+                Data Collection and Pre-processing
               </div>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { metric: "Model Correlation (R²)", value: "> 0.85", icon: <BarChart className="h-6 w-6" /> },
-                { metric: "Three Betel Types", value: "P, KT, RKT", icon: <Calendar className="h-6 w-6" /> },
-                { metric: "Area Calculation Methods", value: "Dual System", icon: <Map className="h-6 w-6" /> },
-                { metric: "Data Integration", value: "Supabase", icon: <LineChart className="h-6 w-6" /> }
+                { metric: "Best Architecture", value: " VGG16", icon: <BarChart className="h-6 w-6" /> },
+                { metric: "Training data", value: " 4777 images", icon: <Calendar className="h-6 w-6" /> },
+                { metric: "Validation data", value: "1123 images", icon: <Map className="h-6 w-6" /> },
+                { metric: "Testing data", value: "562 images", icon: <LineChart className="h-6 w-6" /> }
               ].map((stat, index) => (
                 <div key={index} className="bg-gray-50 rounded-xl p-6 text-center">
                   <div className="inline-flex items-center justify-center p-3 rounded-full mb-4" style={{ backgroundColor: 'var(--color-primary-light)', color: 'white' }}>
@@ -275,7 +241,7 @@ export default function HarvestPredictionPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Learn More About Our Research</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Explore our comprehensive documentation and research findings on the ensemble harvest prediction system.
+            Explore our comprehensive documentation and research findings on the ensemble ripeness prediction system.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

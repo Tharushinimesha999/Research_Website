@@ -134,7 +134,7 @@ export default function VideoSection() {
                       Disease Detection
                     </h4>
                     <p className="text-gray-600 text-sm">
-                      Real-time identification of betel leaf diseases using our CNN-based model with treatment recommendations.
+                      Real-time identification of betel leaf diseases using our CNN-based model with treatment recommendations
                     </p>
                   </div>
                 </div>
@@ -148,10 +148,10 @@ export default function VideoSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1" style={{ color: 'var(--color-primary-dark)' }}>
-                      RIPENESS Prediction
+                      Ripeness Prediction
                     </h4>
                     <p className="text-gray-600 text-sm">
-                      AI-powered yield forecasting for optimal harvest timing across different banana types.
+                      ML-powered system to Classify banana images into ripeness stages
                     </p>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ export default function VideoSection() {
                       Market Predictions
                     </h4>
                     <p className="text-gray-600 text-sm">
-                      Data-driven price forecasting to help farmers maximize their profits through strategic selling.
+                      Data-driven price forecasting to help farmers maximize their profits through strategic selling
                     </p>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export default function VideoSection() {
                       Weather Recommendations
                     </h4>
                     <p className="text-gray-600 text-sm">
-                      Location-specific farming advice based on real-time weather data and forecasts.
+                      Location-specific farming advice based on real-time weather data and forecasts
                     </p>
                   </div>
                 </div>

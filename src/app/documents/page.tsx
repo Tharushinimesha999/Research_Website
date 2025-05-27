@@ -106,7 +106,7 @@ export default function DocumentsPage() {
 
   const handleCopyCitation = useCallback(() => {
     navigator.clipboard.writeText(
-      "Arachchi, M.J.E.M., Kumari, T.A.T.N., Herarth, A.M.A.D., De Silva, M.H.S.A., Kelegama, T., & Rupasinghe, S. (2025). SMARTMUSA: Development of an AI-Powered Mobile Application for Banana Farmers in Sri Lanka.  Department of Information Technology, Sri Lanka Institute of Information Technology, Malabe, Sri Lanka."
+      ", Kumari, T.A.T.N., Herarth, A.M.A.D., De Silva, M.H.S.A., Kelegama, T., & Rupasinghe, S. (2025). SMARTMUSA: Development of an AI-Powered Mobile Application for Banana Farmers in Sri Lanka.  Department of Information Technology, Sri Lanka Institute of Information Technology, Malabe, Sri Lanka."
 
 
     );

@@ -16,8 +16,8 @@ export default function Banner() {
 
   const features = [
     { 
-      title: "Harvest Prediction", 
-      description: "AI-powered yield forecasting for optimized planning", 
+      title: "Banana Ripeness Prediction", 
+      description: "Classify banana images into ripeness stages using CNN and transfer learning", 
       icon: <BarChart className="w-6 h-6" />,
       delay: 0.6
     },

@@ -16,12 +16,12 @@ export default function Footer() {
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <span className="text-2xl font-bold tracking-tight">
-                <span className="text-white">Betel</span>
-                <span style={{ color: 'var(--color-accent)' }}>Care</span>
+                <span className="text-white">Smart</span>
+                <span style={{ color: 'var(--color-accent)' }}>Musa</span>
               </span>
             </Link>
             <p className="mt-4 text-gray-400 max-w-md">
-              An AI-powered mobile application designed to help Sri Lankan banana farmers improve crop yield,
+              An AI-powered mobile application designed to help Sri Lankan banana farmers improve product quality,
               manage diseases, predict market prices, and receive weather-based recommendations.
             </p>
             <div className="flex space-x-4 mt-6">
@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { name: "Disease Detection", href: "/project/disease-detection" },
-                { name: "Harvest Prediction", href: "/project/harvest-prediction" },
+                { name: "Ripeness Prediction", href: "/project/harvest-prediction" },
                 { name: "Market Prediction", href: "/project/market-prediction" },
                 { name: "Weather Based Recommendations", href: "/project/weather-recommendations" }
               ].map((link, index) => (
@@ -79,7 +79,7 @@ export default function Footer() {
         
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} SMARTMUSA Research Project. All rights reserved.
+            © {new Date().getFullYear()} SmartMusa Research Project. All rights reserved.
           </p>
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

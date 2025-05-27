@@ -34,7 +34,7 @@ const supervisors = [
 const students = [
   {
     name: "Malan Jayaranga",
-    role: "Associate Software Engineer",
+    role: "Undergraduate",
     designation: "Research Team Member",
     image: "/member4.jpeg",  
     bio: "Information Technology undergraduate at SLIIT",
@@ -46,7 +46,7 @@ const students = [
   },
   {
     name: "Tharushi Nimesha",
-    role: "Full Stack Developer",
+    role: "Undergraduate",
     designation: "Research Team Member",
     image: "/member1.jpg",
     bio: "Information Technology undergraduate at SLIIT",
@@ -57,10 +57,10 @@ const students = [
     type: "student"
   },
   {
-    name: "Umesh Dewasinghe",
-    role: "Trainee AI/ML Engineer",
+    name: "Sachini De Silva",
+    role: "Undergraduate",
     designation: "Research Team Member",
-    image: "/member3.jpg",
+    image: "/member3.jpeg",
     bio: "Software engineering undergraduate at SLIIT",
     qualification: "Undergraduate in Software Engineering",
     github: "https://github.com/umeshdewasinghe",
@@ -69,8 +69,8 @@ const students = [
     type: "student"
   },
   {
-    name: "Kavindi Fernando",
-    role: "Trainee Business Analyst",
+    name: "Ashan Herath",
+    role: "Undergraduate",
     designation: "Research Team Member",
     image: "/member2.jpeg",
     bio: "Software engineering undergraduate at SLIIT",

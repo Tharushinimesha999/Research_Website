@@ -69,7 +69,7 @@ export default function ContactSection() {
                   </div>
                   <div className="ml-4">
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600 mt-1">SMARTMUSAapp@gmail.com</p>
+                    <p className="text-gray-600 mt-1">sliitresearch285@gmail.com</p>
                   </div>
                 </div>
                 
@@ -81,7 +81,7 @@ export default function ContactSection() {
                   </div>
                   <div className="ml-4">
                     <p className="font-medium text-gray-900">Phone</p>
-                    <p className="text-gray-600 mt-1">+94 77 258 6523</p>
+                    <p className="text-gray-600 mt-1">+94 71 338 2440</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function ContactSection() {
               <div className="mt-10">
                 <h5 className="font-medium text-gray-900 mb-3">Research Areas</h5>
                 <div className="flex flex-wrap gap-2">
-                  {["Machine Learning", "Computer Vision", "Mobile Development", "Agricultural Tech", "Data Science"].map((tag, i) => (
+                  {["Machine Learning", "Computer Vision","IoT", "Mobile Development", "Agricultural Tech"].map((tag, i) => (
                     <span 
                       key={i} 
                       className="px-3 py-1 rounded-full text-sm"
