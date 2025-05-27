@@ -20,7 +20,7 @@ const documentCategories = [
       {
         title: "Proposal Reports",
         description: "Individual reports from all 4 team members",
-        link: "https://drive.google.com/drive/folders/1ZoMC-1Shay0hw5pxHSxG5GrIKyfYVt0f?usp=sharing",
+        link: "https://drive.google.com/drive/folders/1pC801HZOvyGotIG7I0qMV44XZrQlJmlt",
       }
     ]
   },
@@ -34,17 +34,17 @@ const documentCategories = [
       {
         title: "Proposal Presentation",
         description: "Initial project pitch presentation",
-        link: "https://drive.google.com/file/d/1iHF9ugOwUSf_O_8BMmJUGaQOgjYpmfiB/view?usp=sharing",
+        link: "https://drive.google.com/drive/folders/18SVrAks6a5gTI3S209_YTGwCul0gozEp?usp=sharing",
       },
       {
         title: "Progress Presentation 1",
         description: "First milestone results and findings",
-        link: "https://drive.google.com/file/d/1xHvxDpr9nfxys4mrPqFbBSeEDeCNvXmi/view?usp=sharing",
+        link: "https://drive.google.com/drive/folders/1GO26YRANcXiMuOcoD6hmbxDi9hxmacDN",
       },
       {
         title: "Progress Presentation 2",
         description: "Second milestone results and updates",
-        link: "https://drive.google.com/file/d/1qT7HGKzEh5IA1yIIolfzzJldhsRti8x-/view?usp=sharing",
+        link: "https://drive.google.com/drive/folders/1bP-YbcaiU_rYk6DbTrTgJ5TWBw2hfEtN?usp=sharing",
       }
     ]
   },
@@ -72,24 +72,11 @@ const documentCategories = [
       {
         title: "Final Reports",
         description: "Complete documentation of research findings",
-        link: "https://drive.google.com/drive/u/0/folders/10JMb_XENEv2NDVKhBYurtYP3mBOwjB6G",
+        link: "https://drive.google.com/drive/folders/16rCMhnWH88G2pLnxk_GBy4rWVmu1q6vs?usp=sharing",
       }
     ]
   },
-  {
-    title: "Research Paper",
-    description: "Our published academic paper presenting the key findings and innovations of our SMARTMUSA project.",
-    icon: <FileText className="w-6 h-6" />,
-    color: "#9C27B0",
-    bgColor: "rgba(156, 39, 176, 0.1)",
-    documents: [
-      {
-        title: "Published Paper",
-        description: "Academic publication of our research",
-        link: "https://drive.google.com/file/d/19aMGRKijwX5LLJdjddWzKU1vnygGFNWs/view?usp=sharing",
-      }
-    ]
-  },
+  
   {
     title: "Team Information",
     description: "Details about our research team members, roles, and contributions to the SMARTMUSA project.",

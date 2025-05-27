@@ -41,7 +41,7 @@ const navItems = [
     icon: <Cloud className="w-4 h-4" />,
     submenu: [
       { name: "Disease Detection", href: "/project/disease-detection", icon: <Leaf className="w-4 h-4" /> },
-      { name: "Harvest Prediction", href: "/project/harvest-prediction", icon: <BarChart className="w-4 h-4" /> },
+      { name: "Ripeness Prediction", href: "/project/harvest-prediction", icon: <BarChart className="w-4 h-4" /> },
       { name: "Market Prediction", href: "/project/market-prediction", icon: <ShoppingCart className="w-4 h-4" /> },
       { name: "Weather Recommendations", href: "/project/weather-recommendations", icon: <Cloud className="w-4 h-4" /> }
     ]

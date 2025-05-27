@@ -190,7 +190,7 @@ export default function ResearchResultsSection() {
                 <BookOpen className="w-8 h-8" />
               </div>
               <h4 className="font-semibold mb-2">Literature & Research</h4>
-              <p className="text-gray-600 text-sm">Comprehensive analysis of precision agriculture gaps in betel farming sector</p>
+              <p className="text-gray-600 text-sm">Comprehensive analysis of precision agriculture gaps in banana farming sector</p>
             </div>
 
             <div className="text-center">
