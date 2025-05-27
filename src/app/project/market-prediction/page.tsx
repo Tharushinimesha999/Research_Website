@@ -34,7 +34,7 @@ export default function MarketPredictionPage() {
                 Market Prediction System
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl">
-                WhatsApp-integrated market forecasting system with multilingual support, providing betel farmers with profitable market insights and price predictions through conversational AI.
+                WhatsApp-integrated market forecasting system with multilingual support, providing banana farmers with profitable market insights and price predictions through conversational AI.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function MarketPredictionPage() {
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
                 <p className="text-white text-sm md:text-base">
-                  The BetelBrio WhatsApp chatbot provides market predictions in Sinhala, Tamil, and English with high usability through familiar interface.
+                  The chatbot provides market predictions in Sinhala and English with high usability through familiar interface.
                 </p>
               </div>
             </motion.div>
@@ -97,9 +97,9 @@ export default function MarketPredictionPage() {
                       <Bot className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium mb-2">BetelBrio Chatbot System</h3>
+                      <h3 className="text-xl font-medium mb-2"> Chatbot System</h3>
                       <p className="text-gray-600">
-                        Interactive WhatsApp chatbot with step-by-step conversational interface collecting harvest date, weight, leaf quality, and location data through structured user-friendly workflows.
+                        Interactive chatbot with step-by-step conversational interface collecting harvest date, weight, leaf quality, and location data through structured user-friendly workflows.
                       </p>
                     </div>
                   </motion.div>

@@ -4,7 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowLeft, Cloud, Check, ExternalLink, Droplets, Thermometer, Shield, Calendar, AlertTriangle, TrendingUp } from "lucide-react";
+import { ArrowLeft, Cloud, Check, ExternalLink, Droplets, Thermometer, Shield, AlertTriangle, TrendingUp } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -31,10 +31,10 @@ export default function WeatherRecommendationsPage() {
                 Back to home
               </Link>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4" style={{ color: 'var(--color-foreground)' }}>
-                Weather Recommendations System
+                Smart IoT Weather Forecasting & Irrigation System
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl">
-                Three-layer architecture with specialized Random Forest models achieving 99%+ accuracy for watering, fertilizing, and protection recommendations based on real-time weather data.
+                A data-driven mobile solution enhancing irrigation efficiency, yield, and sustainability for Sri Lankan banana farmers through IoT sensors and predictive algorithms.
               </p>
             </div>
           </div>
@@ -113,9 +113,10 @@ export default function WeatherRecommendationsPage() {
                       <Droplets className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium mb-2">Watering Model (99.59% Accuracy)</h3>
+                      <h3 className="text-xl font-medium mb-2">Data Collection Layer (99.59% Accuracy)</h3>
                       <p className="text-gray-600">
-                        Random Forest model with F1 score of 0.996, analyzing rainfall patterns, temperature ranges, consecutive dry days, and crop growth stage to recommend optimal watering frequency for water conservation.
+                        Soil sensors (10cm, 30cm, 60cm), temperature, humidity, and weather data from APIs.
+
                       </p>
                     </div>
                   </motion.div>
@@ -130,9 +131,9 @@ export default function WeatherRecommendationsPage() {
                       <Thermometer className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium mb-2">Fertilizing Model (99.7% Accuracy)</h3>
+                      <h3 className="text-xl font-medium mb-2">Processing Layer (99.7% Accuracy)</h3>
                       <p className="text-gray-600">
-                        Feature importance analysis reveals rainfall amount (49.4%) and classifications (heavy: 29.0%, moderate: 7.7%) as dominant factors, with regional variations recommending cow dung or compost based on location.
+                        Algorithmic engine for growth-stage based irrigation recommendations and real-time weather prediction.
                       </p>
                     </div>
                   </motion.div>
@@ -147,9 +148,9 @@ export default function WeatherRecommendationsPage() {
                       <Shield className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium mb-2">Protection Model (99.8% Accuracy)</h3>
+                      <h3 className="text-xl font-medium mb-2">Presentation Layer</h3>
                       <p className="text-gray-600">
-                        Categorizes weather into three risk levels with specific thresholds: high temperature (33.0°C), low rainfall (2.0mm), and high rainfall (20.0mm), providing location-specific protection strategies.
+                        Bilingual (English/Sinhala) mobile app with dashboards, alerts, and control.
                       </p>
                     </div>
                   </motion.div>
@@ -160,15 +161,15 @@ export default function WeatherRecommendationsPage() {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     className="flex items-start"
                   >
-                    <div className="flex-shrink-0 p-2 rounded-lg mr-4" style={{ backgroundColor: 'var(--color-primary)', color: 'white' }}>
+                    {/* <div className="flex-shrink-0 p-2 rounded-lg mr-4" style={{ backgroundColor: 'var(--color-primary)', color: 'white' }}>
                       <Calendar className="h-6 w-6" />
-                    </div>
-                    <div>
+                    </div> */}
+                    {/* <div>
                       <h3 className="text-xl font-medium mb-2">7-Day Outlook Integration</h3>
                       <p className="text-gray-600">
                         Comprehensive recommendation calendar aligned with typical 15-22 day harvesting intervals, providing timely guidance through notification system and visual farming activity guidance.
                       </p>
-                    </div>
+                    </div> */}
                   </motion.div>
                 </div>
                 
@@ -176,15 +177,16 @@ export default function WeatherRecommendationsPage() {
                   <h3 className="text-lg font-medium mb-4">Model Performance Metrics</h3>
                   <div className="space-y-3">
                     {[
-                      { model: "Watering Recommendations", accuracy: "99.59%", f1: "0.996" },
-                      { model: "Fertilizing Recommendations", accuracy: "99.7%", f1: "0.997" },
-                      { model: "Protection Recommendations", accuracy: "99.8%", f1: "0.998" }
+                      { model: "Rain Forecast", accuracy: "87%", /*f1: "0.996"*/ },
+                      { model: "Soil Moisture", accuracy: "±2.5%", /*f1: "0.997"*/ },
+                      { model: "Temperature", accuracy: "±2°C", /*f1: "0.998"*/ },
+                      { model: "Humidity", accuracy: "±10%", /*f1: "0.998"*/ }
                     ].map((stat, index) => (
                       <div key={index} className="flex justify-between items-center">
                         <span className="text-gray-600">{stat.model}</span>
                         <div className="text-right">
                           <span className="font-medium" style={{ color: 'var(--color-primary-dark)' }}>{stat.accuracy}</span>
-                          <span className="text-gray-500 text-sm ml-2">F1: {stat.f1}</span>
+                          {/* <span className="text-gray-500 text-sm">F1: {stat.f1}</span> */}
                         </div>
                       </div>
                     ))}
@@ -205,7 +207,7 @@ export default function WeatherRecommendationsPage() {
               <div className="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <h3 className="text-2xl font-bold mb-4">Three-Layer System Architecture</h3>
                 <p className="text-gray-600 mb-6">
-                  The weather-based recommendation system consists of integrated layers working together to address major constraints in betel cultivation through data-driven insights.
+                  The weather-based irrigation system consists of integrated layers working together to address major constraints in betel cultivation through data-driven insights.
                 </p>
                 
                 <h4 className="font-medium mb-3" style={{ color: 'var(--color-primary-dark)' }}>Architecture Layers</h4>
@@ -228,7 +230,7 @@ export default function WeatherRecommendationsPage() {
               <div className="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
                 <h3 className="text-2xl font-bold mb-4">Weather API Integration</h3>
                 <p className="text-gray-600 mb-6">
-                  OpenMeteo Weather API integration tested for accuracy across three primary betel cultivation regions with comprehensive performance metrics.
+                  Weather API integration tested for accuracy across banana cultivation regions with comprehensive performance metrics.
                 </p>
                 
                 <div className="space-y-4">
@@ -236,7 +238,7 @@ export default function WeatherRecommendationsPage() {
                     { metric: "Temperature Forecasting", accuracy: "93.2% (±1.8%)", importance: "Critical for pest correlation" },
                     { metric: "Rainfall Prediction", accuracy: "87.5% (±4.2%)", importance: "Guides watering schedules" },
                     { metric: "Humidity Forecasting", accuracy: "91.4% (±2.3%)", importance: "Disease prevention planning" },
-                    { metric: "Historical Data Integration", accuracy: "Three-month validation", importance: "Sri Lanka Meteorology Dept" }
+                    { metric: "Historical Data Integration", accuracy: "One-month validation", importance: "Sri Lanka Meteorology Dept" }
                   ].map((data, index) => (
                     <div key={index} className="bg-gray-50 rounded-lg p-4">
                       <div className="flex justify-between items-start mb-1">
@@ -269,9 +271,9 @@ export default function WeatherRecommendationsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { metric: "Water Usage Reduction", value: "21%", detail: "During rainy periods", icon: <Droplets className="h-6 w-6" /> },
-                { metric: "Fertilizer Efficiency", value: "17%", detail: "Nutrient utilization improvement", icon: <Thermometer className="h-6 w-6" /> },
-                { metric: "Extreme Weather Protection", value: "90%", detail: "Farms with minimal damage", icon: <Shield className="h-6 w-6" /> },
-                { metric: "Overall Profitability", value: "20%", detail: "Improvement with system", icon: <TrendingUp className="h-6 w-6" /> }
+                { metric: "Temperature", value: "17%", detail: "Nutrient utilization improvement", icon: <Thermometer className="h-6 w-6" /> },
+                { metric: "Humidity", value: "90%", detail: "Farms with minimal damage", icon: <Shield className="h-6 w-6" /> },
+                { metric: "Rain Posibility", value: "20%", detail: "Improvement with system", icon: <TrendingUp className="h-6 w-6" /> }
               ].map((stat, index) => (
                 <div key={index} className="bg-gray-50 rounded-xl p-6 text-center">
                   <div className="inline-flex items-center justify-center p-3 rounded-full mb-4" style={{ backgroundColor: 'var(--color-primary-light)', color: 'white' }}>
