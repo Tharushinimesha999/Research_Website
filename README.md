@@ -102,5 +102,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE
 ## Acknowledgements
 
 - Department of Information Technology, SLIIT  
-- Sri Lankan betel farmers for their valuable feedback and participation  
-- Sri Lanka Department of Meteorology for weather data  
