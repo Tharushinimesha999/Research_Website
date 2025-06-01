@@ -24,10 +24,10 @@ An AI-powered application designed specifically for Sri Lankan banana farmers, c
 ## Research Team
 
 **Students**:  
-- Malan Jayaranga  
-- Tharushi Nimesha  
-- Sachini De Silva  
-- Ashan Herath  
+- Arachchi M.J.E.M - IT21172700 
+- Herath A.M.A.D - IT21376054  
+- De silva M.H.S.A - IT21178290  
+- Kumari T.A.T.N - IT21178054  
 
 **Supervisors**:  
 - Ms. Thamali Kelegama  
