@@ -1,40 +1,42 @@
-# BetelCare - Smart Farming Solution
+# SmartMusa - Smart Banana Farming Solution
 
-A comprehensive web platform for the BetelCare research project, showcasing an AI-powered mobile application designed specifically for Sri Lankan betel farmers.
+An AI-powered application designed specifically for Sri Lankan banana farmers, combining advanced machine learning with traditional farming knowledge.
 
 ## Project Overview
 
-**BetelCare** is a machine learning-powered mobile application developed to support betel farmers by offering real-time insights, predictive analytics, and interactive assistance. This repository contains the web platform built with **Next.js** that showcases the research, features, and documentation of the BetelCare project.
+**SmartMusa** is a transformative mobile application built using React Native, specifically designed for banana farmers in Sri Lanka. It bridges the gap between age-old agricultural practices and cutting-edge smart farming technologies.
 
 ## Key Features
 
-- **Harvest Prediction**: AI-powered yield forecasting for optimized planning  
+- **Banana Ripeness Prediction**: Classify banana images into ripeness stages using CNN and transfer learning
 - **Disease Detection**: Early identification of leaf issues with CNN technology  
 - **Market Insights**: Data-driven price predictions for maximum profit  
-- **Weather Recommendations**: Climate-based farming advice for better yields  
+- **Weather Based Recommendations**: Climate-based farming advice for better yields  
 
 ## Technology Stack
 
-- **Frontend**: Next.js 15, TypeScript, Tailwind CSS  
+- **Frontend**: TypeScript, Tailwind CSS  
 - **UI Components**: Shadcn UI, Framer Motion, Lucide Icons  
-- **Mobile App**: Flutter, TensorFlow Lite  
-- **Backend**: Flask, Python  
+- **Mobile App**: React Native, TensorFlow Lite  
+- **Backend**: Flask API, Python  
 - **Machine Learning**: TensorFlow, PyTorch, Scikit-learn  
 
 ## Research Team
 
 **Students**:  
-- W.E.I. Ranawaka  
-- U.H. Dewasinghe  
-- B.K.M. Fernando  
-- E.A.L.S. Siriwardhana  
+- Malan Jayaranga  
+- Tharushi Nimesha  
+- Sachini De Silva  
+- Ashan Herath  
 
 **Supervisors**:  
-- Sanvitha Kasthuriarachchi  
-- Lokesha Weerasinghe  
+- Ms. Thamali Kelegama  
+- Ms. Shalini Rupasinghe  
 
 **Institution**:  
-- Sri Lanka Institute of Information Technology  
+- Sri Lanka Institute of Information Technology
+
+**WebSite Link: https://researchwebsit.netlify.app/ 
 
 ## Getting Started
 
@@ -47,7 +49,7 @@ A comprehensive web platform for the BetelCare research project, showcasing an A
 
 Clone the repository  
 ```bash
-git clone https://github.com/your-username/betelcare-web.git
+git clone https://github.com/your-username/Research_Website.git
 cd betelcare-web
 ```
 
