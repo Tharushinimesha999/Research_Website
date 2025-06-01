@@ -36,7 +36,7 @@ An AI-powered application designed specifically for Sri Lankan banana farmers, c
 **Institution**:  
 - Sri Lanka Institute of Information Technology
 
-**WebSite Link: https://researchwebsit.netlify.app/ 
+**WebSite Link**: https://researchwebsit.netlify.app/ 
 
 ## Getting Started
 
